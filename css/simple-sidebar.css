@@ -36,6 +36,8 @@ body {
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
+    min-height: 80vh;
+
   }
 
   #page-content-wrapper {
@@ -47,4 +49,81 @@ body {
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+
+  .item{
+    position: relative;
+    width: 310px;
+    height: 211px;
+    /* left: 313px;
+    top: 255px; */
+    color: #ffffff;
+    background: #363636;
+    border-radius: 16px;
+  }
+}
+
+
+/* Item */
+.item{
+  position: relative;
+  width: 341px;
+  height: 211px;
+  color: #ffffff;
+  background: #363636;
+  border-radius: 16px;
+}
+
+/* card */
+.container .rectangle-4 {
+  padding:15px 20px;
+  height: 225px;
+  width: 341px;
+  /* padding: 25px; */
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.0);
+  transition: all 0.5s;
+ }
+ .rectangle-4:hover{
+  height: 225px;
+  width: 335px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.34);
+  
+ }
+ 
+.container .rectangle-4 .img{
+ display: inline-block;
+ height: 100px;
+ width: 60px;
+ text-align: center;
+}
+.container .rectangle-4 i{
+ height: 45px;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 50px;
+}
+.container .rectangle-4 h5{
+ color: #1C1F28;
+ font-family: 'Work Sans';
+ font-size: 24;
+ text-align: left;
+ 
+}
+/* What we do? */
+
+#what-we-do{
+
+/* width: 316px; */
+  height: 72px; 
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+
+  color: rgb(12, 11, 11);
 }
