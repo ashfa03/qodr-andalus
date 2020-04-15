@@ -1,30 +1,104 @@
-/*!
+/*
  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-body {
+ body {
   overflow-x: hidden;
 }
 
+/* Sidebar */
 #sidebar-wrapper {
+  color: #F0A1B4;
   min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
+  font-weight: bold;
+  margin-left: -107px;
+  background-color: #3F3F3F;
   transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -webkit-transition: margin .25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+  cursor: pointer;
+  font-size: 30px;
+  color: #F0A1B4;
+  padding: 25px 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Anton', sans-serif;
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: 105px;
+  list-style: none;
+  line-height: 90px;
+  text-align: center;
 }
 
+.box {
+  width: 107px;
+  height: 80px;
+  font-size: 17px;
+  position: sticky;
+  overflow: hidden;
+}
+
+.box .icon {
+  background-color: #3F3F3F;
+}
+
+.box .icon i {
+  font-size: 27px;
+  color: #F0A1B4;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .icon i {
+  transform: scale(0);
+}
+
+.box .text {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  transform: scale(2);
+  background-color: #F0A1B4;
+  transition: all 0.3s ease-in-out;
+}
+
+.box .text1 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  line-height: 24px;
+  padding: 15px 20px;
+  position: absolute;
+  transform: scale(2);
+  background-color: #F0A1B4;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover .text {
+  opacity: 1;
+  line-height: 80px;
+  transform: scale(1);
+}
+
+.box:hover .text1 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Page Content */
 #page-content-wrapper {
   min-width: 100vw;
 }
@@ -36,94 +110,94 @@ body {
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
-    min-height: 80vh;
-
+    min-height: 100vh;
   }
 
   #page-content-wrapper {
-    min-width: 0;
     width: 100%;
     height: 100%;
+    min-width: 0;
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-left: -105px;
   }
 
-  .item{
-    position: relative;
+  .item {
     width: 310px;
     height: 211px;
-    /* left: 313px;
-    top: 255px; */
     color: #ffffff;
-    background: #363636;
+    position: relative;
     border-radius: 16px;
+    background: #363636;
   }
 }
 
-
 /* Item */
-.item{
-  position: relative;
+.item {
   width: 341px;
   height: 211px;
   color: #ffffff;
-  background: #363636;
+  position: relative;
   border-radius: 16px;
+  background: #363636;
 }
 
 /* card */
 .container .rectangle-4 {
-  padding:15px 20px;
-  height: 225px;
   width: 341px;
-  /* padding: 25px; */
-  background-color: rgba(255, 255, 255, 0.26);
-  border-radius: 15px;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.0);
-  transition: all 0.5s;
- }
- .rectangle-4:hover{
   height: 225px;
-  width: 335px;
-  background-color: #FFFFFF;
+  padding: 15px 20px;
   border-radius: 15px;
+  /* padding: 25px; */
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.0);
+}
+
+.rectangle-4:hover {
+  width: 335px;
+  height: 225px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.34);
-  
- }
- 
-.container .rectangle-4 .img{
- display: inline-block;
- height: 100px;
- width: 60px;
- text-align: center;
+
 }
-.container .rectangle-4 i{
- height: 45px;
- margin-left: auto;
- margin-right: auto;
- font-size: 50px;
+
+.container .rectangle-4 .img {
+  width: 60px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
 }
-.container .rectangle-4 h5{
- color: #1C1F28;
- font-family: 'Work Sans';
- font-size: 24;
- text-align: left;
- 
+
+.container .rectangle-4 i {
+  height: 45px;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.container .rectangle-4 h5 {
+  font-size: 24;
+  color: #1C1F28;
+  text-align: left;
+  font-family: 'Work Sans';
+
+}
+
 /* What we do? */
 
-#what-we-do{
+#what-we-do {
 
-/* width: 316px; */
-  height: 72px; 
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
+  /* width: 316px; */
+  height: 72px;
   font-size: 48px;
   line-height: 72px;
+  font-weight: bold;
   text-align: center;
+  font-style: normal;
+  font-family: Poppins;
 
   color: rgb(12, 11, 11);
 }
